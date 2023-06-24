@@ -1,0 +1,17 @@
+.jumbotron{
+    height: 200px;
+    width: 80%;
+    background-color: rgb(212, 210, 210);
+    padding-left: 30px;
+    margin-left: 100px;
+    padding-left: 100px;
+}
+
+.jumbotron-heading{
+    padding-top: 60px;
+    /* padding-left: 100px; */
+}
+
+.jumbotron div input{
+    width: 200px;
+}
