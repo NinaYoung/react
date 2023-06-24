@@ -8,6 +8,8 @@ const data = [
 ]
 
 export default class detail extends Component {
+
+  
   render() {
     console.log(this.props)
     //接收params参数
