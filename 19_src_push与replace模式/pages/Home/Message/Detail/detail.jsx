@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import qs from 'qs'
+// import qs from 'qs'
 
 const data = [
     {id:'01',content:'你好中国1'},
@@ -16,13 +16,12 @@ export default class detail extends Component {
     // const {id,title} = this.props.match.params
 
      //接收search参数
-     const {search} = this.props.location
-     const {id,title} = qs.parse(search.slice(1))
-     console.log(id+title)
-     console.log(this.props.history)
+    //  const {search} = this.props.location
+    //  const {id,title} = qs.parse(search.slice(1))
+    //  console.log(id+title)
 
      //接收state参数
-    //  const {id,title}=this.props.location.state || {}
+     const {id,title}=this.props.location.state || {}
     const findResult = data.find((detail)=>{
         return detail.id === id
     }) || {}

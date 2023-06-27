@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {Route,Switch,Redirect} from 'react-router-dom'
-import Header from './component/Header/header'
 import About from './pages/About/about'
 import Home from './pages/Home/home'
 import MyNavLink from './component/MyNavLink/myNavLink'
@@ -12,7 +11,13 @@ export default class App extends Component {
   render() {
     return (
       <div>
-     <Header />
+        <div className='row'>
+          <div className='col-xs-offset-2 col-xs-8'>
+            <div className='page-header'>
+              <h2>React Router Demo</h2>
+            </div>
+          </div>
+        </div>
 
         <div className='row'>
           <div className='col-xs-offset-2 col-xs-8'>
